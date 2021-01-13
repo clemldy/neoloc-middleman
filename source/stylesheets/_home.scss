@@ -1,0 +1,131 @@
+.home-banner {
+  background-size:     cover;
+  background:          url('../images/neoloc-photo-02.jpg');
+  color:               black;
+  height:              60vh;
+  padding:             10px 0;
+  position:            relative;
+  z-index:             0;
+  .banner-title {
+    margin-top: 10em;
+    padding: 5px;
+    background-image: linear-gradient(-100deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 50%);
+    h1, h2 {
+      // text-shadow: 1px 1px black;
+    }
+  }
+  a {
+    margin-top: 0.5em;
+    font-size: 18px;
+  }
+}
+
+.border-primary {
+  padding:          25px;
+  border-radius:    25px;
+  height:           240px;
+  background-color: $brand-primary;
+  color:            white;
+  p {
+    font-size:      20px;
+  }
+  img {
+    height: 100px;
+    width: auto;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .rounded-icon {
+    height:           160px;
+    width:            160px;
+    background-color: white;
+    border-radius:    50%;
+    color:            $brand-primary;
+    font-size:        60px;
+    line-height:      170px;
+    text-align:       center;
+    margin:           auto;
+    border:           1px solid white;
+    text-decoration:  none
+  }
+
+  .rounded-icon p {
+    font-size: 100px
+  }
+
+  .rounded-icon:hover {
+    background-color: $brand-primary;
+    color:            white;
+    text-decoration:  none;
+    border:           0px;
+  }
+}
+
+.wrapper {
+  width:        100%;
+  margin-left:  auto;
+  margin-right: auto;
+}
+.wrapper-title {
+  background-image: linear-gradient(-100deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 50%);
+  margin-top:       12em;
+  width:            100%;
+  position:         absolute;
+  z-index:          12;
+  h2 {
+    font-size: 40px;
+  }
+}
+.photo_content {
+  margin:               1.5em 0 0 0;
+  padding:              0;
+  text-align:           center;
+  column-gap:           0em;
+  -moz-column-gap:      0em;
+  -webkit-column-gap:   0em;
+  column-count:         3;
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+}
+.item {
+  display:      block;
+  margin:       0;
+  width:        100%;
+  break-inside: avoid-column;
+  img {
+    vertical-align: middle;
+    height:         auto;
+    width:          100%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .border-primary {
+    margin: 25px;
+  }
+  .wrapper-title {
+    padding-top: 4em;
+    margin-top: 0;
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+.appartment-list {
+  img {
+    width:  100%;
+    height: 230px;
+  }
+  p {
+    color: $brand-primary
+  }
+}
+
+.map-neoloc {
+  iframe {
+    width: 100%;
+    height: 60vh;
+  }
+}
