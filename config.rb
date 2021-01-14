@@ -54,7 +54,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
+  # activate :relative_assets
   activate :minify_css
   activate :minify_javascript
 
