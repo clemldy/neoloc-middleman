@@ -15,7 +15,11 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
+set :css_dir, 'stylesheets'
 
+set :js_dir, 'javascripts'
+
+set :images_dir, 'images'
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
