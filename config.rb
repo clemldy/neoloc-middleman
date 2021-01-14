@@ -55,7 +55,8 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
-  set :relative_links, true
+  activate :minify_css
+  activate :minify_javascript
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
