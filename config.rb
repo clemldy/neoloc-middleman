@@ -15,11 +15,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
-# set :css_dir, 'stylesheets'
-#
-# set :js_dir, 'javascripts'
-#
-# set :images_dir, 'images'
+
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
 
@@ -54,14 +50,10 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
-  activate :minify_css
-  activate :minify_javascript
+  activate :relative_assets
+  # activate :minify_css
+  # activate :minify_javascript
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
