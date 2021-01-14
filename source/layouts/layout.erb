@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{{ 'neoloc-logo.png' | theme_image_url }}">
+    <link rel="shortcut icon" href="../images/neoloc-logo.png" type="image/x-icon">
 
     <title>Néoloc votre location meublée à Lyon</title>
     <meta name="description" content="Néoloc propose des locations de studios, appartements, colocations meublés et clés en main à Lyon, Oullins, Villeurbanne, Saint-Genis-Laval. Tous les logements sont rénovés et équipés pour faciliter l’installation des locataires.">
@@ -22,7 +22,9 @@
   </head>
   <body>
     <div id="body-wrap">
+      <%= partial "shared/navbar" %>
       <%= yield %>
+      <%= partial "shared/footer" %>
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

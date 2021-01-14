@@ -1,0 +1,54 @@
+<div class="container contact">
+  <div class="row padded">
+    <div class="col-md-6 carte text-center">
+      <a style="cursor: pointer;" onclick="myNavFunc()">
+        <%= image_tag("carte-contact.jpg") %>
+      </a>
+    </div>
+    <div class="col-md-6 padded">
+      <h3>Coordonnées :</h3>
+      <span>Néoloc</span>
+      <br>
+      <span>3 Rue de Castries</span>
+
+      <br>
+      <a style="cursor: pointer;" onclick="myNavFunc()">69002 LYON</a>
+      <br>
+      <span>Métro Ampère Victor Hugo – Ligne A</span>
+      <br>
+      <a href="tel:04 78 92 11 06">Tél. : 04 78 92 11 06</a>
+      <br>
+      <a href="mailto:hello@neoloc.immo">hello@neoloc.immo</a>
+
+      <h3>Période d'ouverture</h3>
+      <br>
+      <span>du lundi au vendredi : 9h – 12h30 et 14h – 18h</span>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-8 col-md-offset-2">
+      <h4>Néoloc est une petite agence immobilière à taille humaine. Notre équipe dynamique est spécialisée dans la gestion de logements meublés de qualité sur Lyon et ses alentours. Nous proposons de nombreux studios, T2 et colocation.</h4>
+    </div>
+  </div>
+  <div class="row bureau text-center">
+    <div class="col-md-6 padded">
+      <%= image_tag("neoloc-bureau-01.jpg") %>
+    </div>
+    <div class="col-md-6 padded">
+      <%= image_tag("neoloc-bureau-02.jpg") %>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function myNavFunc(){
+    // If it's an iPhone..
+    if( (navigator.platform.indexOf("iPhone") != -1)
+    || (navigator.platform.indexOf("iPod") != -1)
+    || (navigator.platform.indexOf("iPad") != -1))
+    window.open("maps://maps.google.com/maps?daddr=44.790116,4.2254126&amp;ll=");
+    else
+    window.open("https://goo.gl/maps/UEnddJ5qrZSVbBAe6");
+  }
+
+</script>
